@@ -20,7 +20,7 @@ function HomePage() {
         setVehicleTypes(Results);
         setModelYears(YEARS_RANGE);
       } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
       }
     })(); //Immediately Invoked Function Expression
   }, []);
@@ -28,9 +28,9 @@ function HomePage() {
   const isBtnVisible = selectedType !== "Unset" && selectedYear !== "Unset";
 
   return (
-    <main className="relative flex justify-center w-[100vw] h-[100vh] p-0 overflow-y-hidden z-10">
+    <main className="relative flex justify-center w-[100vw] h-[100vh] p-0 z-10">
       <div className="flex items-center justify-center w-full h-full ">
-        <div className="flex flex-col gap-4 w-full items-center justify-center font-semibold">
+        <div className="flex flex-col gap-4 w-full items-center justify-center font-semibold px-4">
           <Select
             label="Vehicle's type"
             data={vehicleTypes}
