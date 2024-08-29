@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Dealer App
 
-## Getting Started
+This project is a Next.js-based web application that allows users to filter vehicles by type and model year, then view the filtered results on a separate page. The application uses Tailwind CSS for styling and integrates external APIs to fetch vehicle data.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Vehicle Filtering**: Users can filter vehicles by type and model year.
+- **Dynamic Routing**: The app uses Next.js dynamic routing to display results based on user-selected criteria.
+- **Tailwind CSS**: Styling is done using Tailwind CSS to ensure a responsive and modern UI.
+- **React Suspense**: Suspense is used for handling loading states where applicable.
+- **Error Handling**: The application includes error handling for API requests.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Node.js](https://nodejs.org/) (v14.0.0 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## Learn More
+### Steps
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone https://github.com/yourusername/car-dealer-app.git
+    cd car-dealer-app
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install dependencies:**
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    ```
+    or if you're using yarn:
+    ```bash
+    yarn install
+    ```
+3. **Run the development server:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    ```
+    or if you're using yarn:
+    ```bash
+    yarn dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
+
+## Usage
+
+### Filter Vehicles
+
+- On the home page, select a vehicle type from the dropdown and choose a model year.
+- Click "Next" to view the filtered vehicles on a results page.
+
+### View Results
+
+- The results page will display a list of vehicle models based on the selected vehicle type and model year.
+- The URL will reflect the selected options, allowing easy sharing of specific filtered results.
+
+
