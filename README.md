@@ -22,8 +22,8 @@ This project is a Next.js-based web application that allows users to filter vehi
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/car-dealer-app.git
-    cd car-dealer-app
+    git clone https://github.com/psht13/car-app.git
+    cd car-app
     ```
 
 2. **Install dependencies:**
